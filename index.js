@@ -60,7 +60,7 @@ let notes = [
 
 
   app.post('/api/notes', (request, response) => {
-    const note = request.body
+    const note = request.body   
     note.id = notes.length+1
     console.log(note)
     notes.push(note)
